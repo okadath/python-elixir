@@ -4,14 +4,23 @@
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `test_python` to your list of dependencies in `mix.exs`:
+instalar rebar3 para compilar:
 
-```elixir
-def deps do
-  [
-    {:test_python, "~> 0.1.0"}
-  ]
-end
-```
+	wget https://s3.amazonaws.com/rebar3/rebar3 && chmod +x rebar3
+	./rebar3 local install
+
+crear:
+	
+	 mix new test_python
+
+en `mix.exs`:
+
+	defp deps do
+	  [
+	    {:erlport, "~> 0.10.0"},
+	  ]
+	end
+
+y llamarlo desde el archivo el /lib/asd.ex
+crear en / 
 
