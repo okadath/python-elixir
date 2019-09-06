@@ -2,7 +2,7 @@
 
 **Ejecutando python3 desde la VM de elixir**
 
-## Installacion
+## Instalacion
 
 instalar rebar3 para compilar:
 
