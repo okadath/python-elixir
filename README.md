@@ -1,8 +1,8 @@
 # TestPython
 
-**ejecutando python3 desde la VM de elixir**
+**Ejecutando python3 desde la VM de elixir**
 
-## Installation
+## Installacion
 
 instalar rebar3 para compilar:
 
@@ -28,12 +28,12 @@ y llamarlo desde el archivo el /lib/asd.ex:
       {:python_path, './'},
     ]) 
 
-crear en / las funciones de python a usar
+Crear en `/` las funciones de python a usar
 
-##erlport en python
+## erlport en python
 
-hay un error en la instalacion, hay que copiar del repositorio de github la carpeta  `erlport/priv/python2/erlport/` en la ubicacion de librerias de python (en mi caso `/usr/local/lib/python3.5/dist-packages/erlport`, si no existe crearla o borrar todo y luego copiar el contenido de la version 3 `erlport/priv/python3/erlport/` sobreescribiendo los archivos de la v2 sin borrar los que no se sobreescriban) se debe hacer como sudo y luego se regresa el chmod de la carpeta erlport:
+Hay un error en la instalacion, hay que copiar del repositorio de github la carpeta  `erlport/priv/python2/erlport/` en la ubicacion de librerias de python (en mi caso `/usr/local/lib/python3.5/dist-packages/erlport`, si no existe crearla o borrar todo y luego copiar el contenido de la version 3 `erlport/priv/python3/erlport/` sobreescribiendo los archivos de la v2 sin borrar los que no se sobreescriban) se debe hacer como sudo y luego se regresa el chmod de la carpeta erlport:
 
 	sudo chmod -R 777 .
 
-hay errores al importar la libreria, al final la copia en el local y en el lib de python directamente
+Hay errores al importar la libreria, al final la copia en el local y en el lib de python directamente
